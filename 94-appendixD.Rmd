@@ -186,8 +186,9 @@ the middle 50% of values, as delineated by the interquartile range is 30&deg;F.
 **Solution**: 
 
 * Certain months have much more consistent weather (August in particular), while others have crazy variability like January and October, representing changes in the seasons.
-* Because we see `temp` recordings split by `month`, we are considering the relationship between these two variables. For example, for summer months, temperatures tend to be higher. 
-**`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** What do the numbers 1-12 correspond to in the plot above?  What about 25, 50, 75, 100?
+* Because we see `temp` recordings split by `month`, we are considering the relationship between these two variables. For example, for summer months, temperatures tend to be higher.
+
+**`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** What do the numbers 1-12 correspond to in the plot above? What about 25, 50, 75, 100?
 
 **Solution**: 
 
@@ -277,11 +278,11 @@ weather %>%
 
 **`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** What is your opinion as to why pie charts continue to be used?
 
-**Solution**: In our **opinion**, pie charts are generally considered as a poorer method for communicating data than bar charts. People's brains are not as good at comparing the size of angles because there is no scale, and in comparison, it is much easier to compare the heights of bars in a bar charts. However, in some circumstances, for example, when representing 25% and 75% of a sample size, if we have 2 bars, in which the higher one is three times in height of the other one, it is difficult to tell the scale of their comparison without labels. But in a bar chart, it would be easy to compare if a circle is divided by 75% and 25%. (Read more at: https://www.displayr.com/why-pie-charts-are-better-than-bar-charts/)
+**Solution**: In our **opinion**, pie charts are generally considered as a poorer method for communicating data than bar charts. People's brains are not as good at comparing the size of angles because there is no scale, and in comparison, it is much easier to compare the heights of bars in a bar charts. However, in some circumstances, for example, when representing 25% and 75% of a sample size, if we have 2 bars, in which the higher one is three times in height of the other one, it is difficult to tell the scale of their comparison without labels. But in a pie chart, it would be easy to compare if a circle is divided by 75% and 25%. (Read more at: https://www.displayr.com/why-pie-charts-are-better-than-bar-charts/)
 
 **`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** What kinds of questions are not easily answered by looking at the above figure?
 
-**Solution**: Because the red, green, and blue bars don't all start at 0 (only red does), it makes comparing counts hard.
+**Solution**: Because the red, green, and blue bars don't all start at 0 (only blue does), it makes comparing counts hard.
 
 **`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** What can you say, if anything, about the relationship between airline and airport in NYC in 2013 in regards to the number of departing flights?
 
@@ -289,7 +290,7 @@ weather %>%
 
 **`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** Why might the side-by-side (AKA dodged) barplot be preferable to a stacked barplot in this case?
 
-**Solution**: We can easily compare the different airports for a given carrier using a single comparison line i.e. things are lined up
+**Solution**: We can easily compare the different airports for a given carrier using a single comparison line, i.e., things are lined up
 
 **`r paste0("(LC", chap, ".", (lc <- lc + 1), ")")`** What are the disadvantages of using a side-by-side (AKA dodged) barplot, in general?
 
